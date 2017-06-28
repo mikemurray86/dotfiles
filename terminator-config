@@ -1,0 +1,22 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, LaunchpadBugURLHandler
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      command = ""
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#00ff00"
+    foreground_color = "#00ff00"
+    scrollbar_position = hidden
+    show_titlebar = False
