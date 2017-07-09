@@ -1,3 +1,4 @@
+set nocompatible		            " Make VIM work properly
 filetype off						" Needed for Vundle
 " # Configure Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -13,7 +14,6 @@ call vundle#end()
 filetype on				            " Enable filetype detection
 filetype indent on		            " Enable filetype-specific indenting
 filetype plugin on		            " Enable filetype-specific plugin loading 
-set nocompatible		            " Make VIM work properly
 syntax on				            " Enable Syntax highlighting
 set tabstop=4
 set softtabstop=4		            " Make tabs of all kinds 4 spaces wide
