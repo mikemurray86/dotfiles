@@ -1,6 +1,8 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, LaunchpadBugURLHandler
 [keybindings]
+  split_horiz = <Primary><Shift>h
+  split_vert = <Primary><Shift>v
 [layouts]
   [[default]]
     [[[child1]]]
