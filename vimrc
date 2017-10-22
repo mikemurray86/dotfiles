@@ -9,6 +9,7 @@ Plugin 'tpope/vim-fugitive'
 " Plugin for a good status line
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 
@@ -23,6 +24,7 @@ set noexpandtab
 set showmatch			            " highlight matching brackets 
 
 nmap <F12> :TagbarToggle<CR>        " Set F12 to toggle the tagbar on or off
+imap ;; <Esc>
 
 " ##### Set up Airline #####
 set laststatus=2
