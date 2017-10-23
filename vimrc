@@ -10,6 +10,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 
