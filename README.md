@@ -12,9 +12,9 @@
 
 ## Vim
 
-My vimrc is the most complicated config I currently manage. it is split into multiple sections below for clarity. 
+My vimrc is the most complicated config I currently manage. it is split into multiple sections below for clarity.
 
-### Plugin Management
+##### Plugin Management
 
 I use [Vundle](https://github.com/VundleVim/Vundle.vim) to manage installed plugins. Currently there are plugins for:
 * [git integration](https://github.com/tpope/vim-fugitive)
@@ -24,21 +24,21 @@ I use [Vundle](https://github.com/VundleVim/Vundle.vim) to manage installed plug
 * [tag navigation](https://github.com/majutsushi/tagbar)
 * [a custom colorscheme](https://github.com/nanotech/jellybeans.vim)
 
-### simple programing settings
+##### simple programming settings
 
-By default this sets tabs to be four spaces. Syntax highlighting for matching brackets are enabled and for the languages I program in regularly I set a good colorscheme.
+By default this sets tabs to be four spaces. Syntax highlighting for matching brackets are enabled and for the languages I program in regularly I set a good color scheme.
 
-### different key bindings
+##### different key bindings
 
 <Esc> is bound to ;; and to use the tagbar you can press F12
 
-### Appearance
+##### Appearance
 
-The status bar is on by default and the serene theme is enabled. For most files the zellner theme is used. If it's a language I use often then jellybeans is applied. 
+The status bar is on by default and the serene theme is enabled. For most files the zellner theme is used. If it's a language I use often then jellybeans is applied.
 
 ## Tmux
 
-I have two tmux config files. One sets all my normal settings for day to day use. then there is another config that just handles the layouts of panes. 
+I have two tmux config files. One sets all my normal settings for day to day use. then there is another config that just handles the layouts of panes.
 
 # The Config File
 
@@ -54,8 +54,8 @@ This is a crazy simple config currently. it builds a custom prompt and set's ali
 
 ## Terminator
 
-This sets basic appearance settings. 
+This sets basic appearance settings.
 
 ## Setting Up
 
-This is a work in progress script that handles dependency resolution for all the above programs. Currently it's writting to work with Ubuntu, Fedora and Arch. I have only started testing it on Fedora. 
+This is a work in progress script that handles dependency resolution for all the above programs. Currently it's writting to work with Ubuntu, Fedora and Arch. I have only started testing it on Fedora.
