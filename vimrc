@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Plugin for github integration
+Plugin 'Vundle/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " Plugin for a good status line
 Plugin 'vim-airline/vim-airline'
