@@ -1,5 +1,5 @@
 set nocompatible		            " Make VIM work properly
-filetype off						" Needed for Vundle
+filetype off						        " Needed for Vundle
 " # Configure Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -16,17 +16,17 @@ Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 
-filetype on				            " Enable filetype detection
-filetype indent on		            " Enable filetype-specific indenting
-filetype plugin on		            " Enable filetype-specific plugin loading 
-syntax on				            " Enable Syntax highlighting
+filetype on				              " Enable filetype detection
+filetype indent on		          " Enable filetype-specific indenting
+filetype plugin on		          " Enable filetype-specific plugin loading 
+syntax on				                " Enable Syntax highlighting
 set tabstop=4
 set softtabstop=4		            " Make tabs of all kinds 4 spaces wide
 set shiftwidth=4
-set noexpandtab
-set showmatch			            " highlight matching brackets 
+set expandtab                   " Use spaces instead of tab
+set showmatch			              " highlight matching brackets 
 
-nmap <F12> :TagbarToggle<CR>        " Set F12 to toggle the tagbar on or off
+nmap <F12> :TagbarToggle<CR>    " Set F12 to toggle the tagbar on or off
 imap ;; <Esc>
 
 " ##### Set up Airline #####
