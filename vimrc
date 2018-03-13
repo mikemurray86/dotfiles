@@ -32,14 +32,16 @@ colorscheme zellner
 " }}}
 " Mappings {{{
 nnoremap <F12> :TagbarToggle<CR>    " Set F12 to toggle the tagbar on or off
-inoremap ;; <Esc>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-k> <C-W><C-K>
 nnoremap <C-L> <C-W><C-W>
-noremap <F9> :NERDTreetoggle<CR>
+nnoremap Dtw :%s/\s\+$//e<CR>
+nnoremap dtw :%s/\s\+$//ec<CR>
 nnoremap <space> za
-onoremap tw :%s/\s\+$//e<CR>
+noremap <F9> :NERDTreetoggle<CR>
+inoremap ;; <Esc>
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 " }}}
 " Airline {{{
 " ##### Set up Airline #####
