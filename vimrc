@@ -3,9 +3,8 @@ filetype off						        " Needed for Vundle
 " # Configure Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
+Plugin 'VundleVim/Vundle.vim'
 " Plugin for github integration
-Plugin 'Vundle/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " Plugin for a good status line
 Plugin 'vim-airline/vim-airline'
@@ -13,7 +12,13 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nanotech/jellybeans.vim'
-
+Plugin 'scrooloose/nerdtree'
+if has('python')
+    Plugin 'SirVer/ultisnips'
+else
+    Plugin 'garbas/vim-snipmate'
+endif
+Plugin 'honza/vim-snippets'
 call vundle#end()
 " }}}
 " The Basics {{{
@@ -37,19 +42,25 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-k> <C-W><C-K>
 nnoremap <C-L> <C-W><C-W>
-noremap <F9> :NERDTreetoggle<CR>
+nnoremap tn :tabnext<CR>
+nnoremap tp :tabprevious<CR>
+noremap <F9> :NERDTreeToggle<CR>
 nnoremap <space> za
-onoremap tw :%s/\s\+$//e<CR>
+nnoremap dtw :%s/\s\+$//ec<CR>
 " }}}
 " Airline {{{
 " ##### Set up Airline #####
 set laststatus=2
 let g:airline_theme='serene'
 " }}}
+" UltiSnips {{{
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-j>'
+let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 " Autocmd settings {{{
 :augroup prog_lang
 :autocmd!
-autocmd FileType c,cpp,python colorscheme jellybeans set number
+autocmd FileType c,cpp,python,ruby colorscheme jellybeans
 autocmd FileType vim :setlocal foldmethod=marker
 :augroup END
 " }}}
