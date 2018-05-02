@@ -13,6 +13,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-commentary'
 if has('python')
     Plugin 'SirVer/ultisnips'
 else
