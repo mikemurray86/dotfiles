@@ -70,6 +70,10 @@ let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 :augroup prog_lang
 :autocmd!
 autocmd FileType c,cpp,python,ruby colorscheme jellybeans
-autocmd FileType vim :setlocal foldmethod=marker
+:augroup END
+:augroup vim_edits
+:autocmd!
+:autocmd BufWritePost $MYVIMRC :source $MYVIMRC
+:autocmd FileType vim :setlocal foldmethod=marker
 :augroup END
 " }}}
