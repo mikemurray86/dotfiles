@@ -36,6 +36,13 @@ set showmatch                   " highlight matching brackets
 set nohlsearch
 colorscheme zellner
 " }}}
+" GUI Settings {{{
+if has("gui_running")
+    colorscheme elflord
+    :set guioptions-=T " No ToolBar
+    :set guioptions-=r " No ScrollBar
+endif
+" }}}
 " Mappings {{{
 nnoremap <F12> :TagbarToggle<CR>    " Set F12 to toggle the tagbar on or off
 nnoremap <C-H> <C-W><C-H>
