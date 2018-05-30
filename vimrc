@@ -35,6 +35,8 @@ set expandtab                   " Use spaces instead of tab
 set showmatch                   " highlight matching brackets
 set nohlsearch
 colorscheme zellner
+set splitright
+set splitbelow
 " }}}
 " GUI Settings {{{
 if has("gui_running")
